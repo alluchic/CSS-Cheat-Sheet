@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="./Resources/CSS/style.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <title>CSS Cheat Sheet</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navigation" id="navbar">
+                <ul class="nav-links">
+                    <li><a href='#background'>background</a></li>
+                    <li><a href='#border'>border</a></li>
+                    <li><a href="#box-model">box model</a></li>
+                    <li><a href="#font">font</a></li>
+                    <li><a href="#text">text</a></li>
+                    <li><a href="#column">column</a></li>
+                    <li><a href="#colors">colors</a></li>
+                    <li><a href="#table">table</a></li>
+                    <li><a href="#selector-types">selector types</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero">
+            <h2>Beginner's essential</h2>
+            <h1>CSS cheat sheet</h1>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name='background'>Backgrounds</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">background</h3>
+                    <p>background-image <br>background-postition<br>background-size<br>background-repeat<br>background-attachment<br>background-origin<br>background-flip<br>background-clip<br>background-color</br></p>
+                    <h3 class="tag-title">background-image</h3>
+                    <p>url | gradients | none</p>
+                    <h3 class="tag-title">background-position</h3>
+                    <p>top left | top center | top right<br>center left | center center | center right<br>bottom left | bottom center | bottom right<br>x-% | y-%<br>x-pos | y-pos</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">background-size</h3>
+                    <p>length<br>%<br>auto | cover | contain</p>
+                    <h3 class="tag-title">background-repeat</h3>
+                    <p>repeat | repeat-x | repeat-y | no-repeat</p>
+                    <h3 class="tag-title">background-attachment</h3>
+                    <p>scroll | fixed | lockal</p>
+                    <h3 class="tag-title">background-origin</h3>
+                    <p>boarder box | padding-box | content-box</p>
+                    <h3 class="tag-title">background-clip</h3>
+                    <p>boarder box | padding-box | content-box | no clip</p>
+                    <h3 class="tag-title">background-color</h3>
+                    <p>color | transparent</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name='border'>Border</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">border</h3>
+                    <p>border-width<br>border-style<br>border-color</p>
+                    <h3 class="tag-title">border-width</h3>
+                    <p>thin | medium | thick | length</p>
+                    <h3 class="tag-title">border-style</h3>
+                    <p>none | hidden | dotted<br>dashed | solid | double<br>groove | ridge | inset | outset</p>
+                    <h3 class="tag-title">border-color</h3>
+                    <p>color</p>
+                    <h3 class="tag-title">border-left</h3>
+                    <p>border-left-width<br>border-style<br>border-color</p>
+                    <h3 class="tag-title">border-left-style</h3>
+                    <p>border-style</p>
+                    <h3 class="tag-title">border-left-color</h3>
+                    <p>border-color</p>
+                    <h3 class="tag-title">border-left-width</h3>
+                    <p>thin | medium | thick length</p>
+                    <h3 class="tag-title">border-right</h3>
+                    <p>border-right-width<br>border-style<br>border-color</p>
+                    <h3 class="tag-title">border-right-style</h3>
+                    <p>border-style</p>
+                    <h3 class="tag-title">border-right-color</h3>
+                    <p>border-color</p>
+                    <h3 class="tag-title">border-right-width</h3>
+                    <p>thin | medium | thick | length</p>
+                    <h3 class="tag-title">border-top</h3>
+                    <p>border-top-width<br>border-style<br>border-color</p>
+                    <h3 class="tag-title">border-top-style</h3>
+                    <p>border-style</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">border-top-color</h3>
+                    <p>border-color</p>
+                    <h3 class="tag-title">border-top-width</h3>
+                    <p>thin | medium | thick | length</p>
+                    <h3 class="tag-title">border-bottom</h3>
+                    <p>border-bottom-width<br>border-style<br>border-color</p>
+                    <h3 class="tag-title">border-bottom-color</h3>
+                    <p>border-color</p>
+                    <h3 class="tag-title">border-bottom-style</h3>
+                    <p>border-style</p>
+                    <h3 class="tag-title">border-break</h3>
+                    <p>border-width<br>border-style<br>color<br>close</p>
+                    <h3 class="tag-title">box-shadow</h3>
+                    <p>inset || [ length, length, length, length || <color> ] none</color></p>
+                    <h3 class="tag-title">border-collapse</h3>
+                    <p>collapce | separate</p>
+                    <h3 class="tag-title">border-image</h3>
+                    <p>image<br>[ number / % border-width<br>stretch | repeat | round<br>none</p>
+                    <h3 class="tag-title">border-radius</h3>
+                    <p>border-radius<br>border-top-right-radius<br>border-bottom-right-radius<br>border-top-left-radius</p>
+                    <h3 class="tag-title">border-top-right-radius</h3>
+                    <p>length</p>
+                    <h3 class="tag-title">border-bottom-right-radius</h3>
+                    <p>length</p>
+                    <h3 class="tag-title">border-bottom-left-radius</h3>
+                    <p>length</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <h2 class="container-title"><a name="box-model">box model</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">float</h3>
+                    <p>left | right | none</p>
+                    <h3 class="tag-title">height</h3>
+                    <p>auto<br>length<br>%</p>
+                    <h3 class="tag-title">max-height</h3>
+                    <p>none<br>length<br>%</p>
+                    <h3 class="tag-title">max-width</h3>
+                    <p>none<br>length<br>%</p>
+                    <h3 class="tag-title">min-height</h3>
+                    <p>none<br>length<br>%</p>
+                    <h3 class="tag-title">width</h3>
+                    <p>auto<br>length<br>%</p>
+                    <h3 class="tag-title">margin</h3>
+                    <p>margin-top<br>margin-right<br>margin-buttom<br>margin-left</p>
+                    <h3 class="tag-title">margin-bottom</h3>
+                    <p>auto<br>length<br>%</p>
+                    <h3 class="tag-title">margin-left</h3>
+                    <p>auto<br>length<br>%</p>
+                    <h3 class="tag-title">margin-right</h3>
+                    <p>auto<br>length<br>%</p>
+                    <h3 class="tag-title">margin-top</h3>
+                    <p>auto<br>length<br>%</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">padding</h3>
+                    <p>padding-top<br>padding-right<br>padding-buttom<br>padding-left</p>
+                    <h3 class="tag-title">padding-bottom</h3>
+                    <p>length<br>%</p>
+                    <h3 class="tag-title">padding-left</h3>
+                    <p>length<br>%</p>
+                    <h3 class="tag-title">padding-right</h3>
+                    <p>length<br>%</p>
+                    <h3 class="tag-title">padding-top</h3>
+                    <p>length<br>%</p>
+                    <h3 class="tag-title">display</h3>
+                    <p>none | inline | block | inline-block<br>list-ithem | run-in<br>compact | table | inline-table<br>table-row-group | table-header-group<br>table-footer-group<br>table-row | table-column-group<br>table-column | table-cell | table-caption<br>ruby | ruby-base | ruby-text<br>ruby-base-group | ruby-text-group<br>inline-flex | inline-grid | contents</p>
+                    <h3 class="tag-title">overflow</h3>
+                    <p>visible | hidden | scroll<br>auto | non-display | no-content<br>overflow-x<br>overflow-y</p>
+                    <h3 class="tag-title">overflow-style</h3>
+                    <p>auto | marguee-line | margueeblock</p>
+                    <h3 class="tag-title">overflow-x</h3>
+                    <p>visible | hidden | scroll<br>auto | non-display | no-content</p>
+                    <h3 class="tag-title">rotation</h3>
+                    <p>angle</p>
+                    <h3 class="tag-title">rotation-point</h3>
+                    <p>position (paired value off-set)</p>
+                    <h3 class="tag-title">visibility</h3>
+                    <p>visible | hidden | collapse</p>
+                    <h3 class="tag-title">clear</h3>
+                    <p>left | right | both | none</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name="font">font</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">font</h3>
+                    <p>font-style<br>font-variant<br>font-weight<br>font-size/line-height<br>font-family<br>caption | icon | menu | messagebox<br>small-caption | status-bar</p>
+                    <h3 class="tag-title">font-size-adjust</h3>
+                    <p>none | inherit<br>number</p>
+                    <h3 class="tag-title">font-family</h3>
+                    <p>serif | sans-serif | monospace | cursive<br>fantasy | system-ui | emoji | math<br>fangsong | inherit | initial | unset</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">font-style</h3>
+                    <p>normal | italic | oblique<br>inherit</p>
+                    <h3 class="tag-title">font-variant</h3>
+                    <p>normal | small-caps | inherit</p>
+                    <h3 class="tag-title">font-size</h3>
+                    <p>xx-samll | x-small | small<br>medium | large | x-large | xxlarge<br>smaller | larger<br>inherit<br>length<br>%</p>
+                    <h3 class="tag-title">font-weight</h3>
+                    <p>normal | bold | bolder | lighter<br>100 | 200 | 300 | 400 | 500<br>600 | 700 | 800 | 900 | inherit</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name="text">text</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">direction</h3>
+                    <p>ltr | rtl | inherit</p>
+                    <h3 class="tag-title">hanging-punctuation</h3>
+                    <p>none | [ start | end | endedge ]</p>
+                    <h3 class="tag-title">letter-spacing</h3>
+                    <p>normal<br>length<br>%</p>
+                    <h3 class="tag-title">text-outline</h3>
+                    <p>none<br>color<br>length</p>
+                    <h3 class="tag-title">unicode-bidi</h3>
+                    <p>normal | embed | bidi-override</p>
+                    <h3 class="tag-title">white-space</h3>
+                    <p>normal | pre | nowrap | prew-rap<br>pre-line</p>
+                    <h3 class="tag-title">white-space-collapse</h3>
+                    <p>preserve | collapse | pre-servebreaks<br>discard</p>
+                    <h3 class="tag-title">puntuation-trim</h3>
+                    <p>none<br>[ start | end | adjacent ]</p>
+                    <h3 class="tag-title">text-align</h3>
+                    <p>start | end | left | right<br>center | justify</p>
+                    <h3 class="tag-title">text-aling-last</h3>
+                    <p>start | end | left | right<br>center | justify</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">text-decoration</h3>
+                    <p>none | underline | overline<p>start | end | left | right<br>center | justify<br>line-through | blink</p>
+                    <h3 class="tag-title">text-shadow</h3>
+                    <p>none<br>color<br>length</p>
+                    <h3 class="tag-title">word-break</h3>
+                    <p>normal | keep-all | loose<br>break-strict | break-all</p>
+                    <h3 class="tag-title">word-wrap</h3>
+                    <p>normal<br>nowrap</p>
+                    <h3 class="tag-title">text-emphasis</h3>
+                    <p>none<br>[ accent | dot | circle | disc<br>before | after ]</p>
+                    <h3 class="tag-title">text-indent</h3>
+                    <p>length<br>%</p>
+                    <h3 class="tag-title">text-justify</h3>
+                    <p>auto | inter-word | inter-ideograph<br>inter-cluster<br>distribute | kashida | tibetan</p>
+                    <h3 class="tag-title">text-transform</h3>
+                    <p>none [ capitalize<br>uppercase | lowercase</p>
+                    <h3 class="tag-title">text-wrap</h3>
+                    <p>normal | unrestricted | none | supress</p>
+                    <h3 class="tag-title">word-spacing</h3>
+                    <p>normal<br>length<br>%</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name="column">column</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">column-count</h3>
+                    <p>auto<br>number</p>
+                    <h3 class="tag-title">column-fill</h3>
+                    <p>auto | balance</p>
+                    <h3 class="tag-title">column-gap</h3>
+                    <p>normalbr>length</p>
+                    <h3 class="tag-title">column-rule</h3>
+                    <p>column-rule-widthbr<br>column-rule-style<br>column-rule-color</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">column-rule-style</h3>
+                    <p>border-style</p>
+                    <h3 class="tag-title">columns</h3>
+                    <p>column-width<br>columnt-count</p>
+                    <h3 class="tag-title">column-rule-width</h3>
+                    <p>thin | medium | thick<br>length</p>
+                    <h3 class="tag-title">column-width</h3>
+                    <p>auto<br>length</p>
+                    <h3 class="tag-title">column-span</h3>
+                    <p>1 | all</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name="colors">colors</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">color</h3>
+                    <p>inherit<br>color</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">opacity</h3>
+                    <p>inherit<br>number</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name="table">table</a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title">border-collapse</h3>
+                    <p>collapse | separate</p>
+                    <h3 class="tag-title">empty-cells</h3>
+                    <p>show | hide</p>
+                    <h3 class="tag-title">border-spacing</h3>
+                    <p>length length</p>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title">table-layout</h3>
+                    <p>auto | fixed</p>
+                    <h3 class="tag-title">caption-side</h3>
+                    <p>top | bottom | left | right</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="container-title"><a name="selector-types">Selector Types</a></h2>
+            <table>
+                <thead>
+                    <tr = class="table-title">
+                        <th>name</th>
+                        <th>info</th>
+                        <th>example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="sub-title">universal</td>
+                        <td id="description">any element</td>
+                        <td id="example">* { font: 10px Arial; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">type</td>
+                        <td id="description">any element of that group</td>
+                        <td id="example">h1 { text-decoration: underline; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">grouping</td>
+                        <td id="description">multiple elements of different types</td>
+                        <td id="example">h1, h2, h3 { font-family: Verdana; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">class</td>
+                        <td id="description">multiple elements of different types when you don't want to affect all instances of that type</td>
+                        <td id="example">.sampleClass { text-decoration: underline; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">id</td>
+                        <td id="description">a single element type when you don't want to affect all instances of that class</td>
+                        <td id="example">#sampleID { text-decoration: underline; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">descendant</td>
+                        <td id="description">An element that is below (in the document tree) another element - no matter how many levels below</td>
+                        <td id="example">#gallery h1 { text-decoration: underline; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">child</td>
+                        <td id="description">An element that is directly below (in the document tree) another element</td>
+                        <td id="example">#title > p { font-weight: bold; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">adjacent sibling</td>
+                        <td id="description">All elements that share the same parent and elements are in the same immediate sequence</td>
+                        <td id="example">h1 + p { font-style: italic; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">general sibling</td>
+                        <td id="description">All elements that share the same parent and elements are in the same sequence (not necessarily immediate)</td>
+                        <td id="example">h1 ~ p { font-style: italic; }</td>
+                    </tr>
+                    <tr>
+                        <td id="sub-title">attribute</td>
+                        <td id="description">An element that matches the attribute listed</td>
+                        <td id="example">E[selected] - att whatever the value<br>E[att="val"] -att with a specific value<br>E[rel~="next"] - att with a value is a whitespace separated list<br>*[lang|="en"] - att value either being exactly "val" or beginning with "val" immediately followed by "-"<br>E[att^="val"] - att value that begins with the prefix "val"</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!--for later
+        <div class="container">
+            <h2 class="container-title"><a name=""></a></h2>
+            <div class="split-container">
+                <div class="column-1">
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                </div>
+                <div class="column-2">
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                    <h3 class="tag-title"></h3>
+                </div>
+            </div>
+        </div>
+        -->
+        <footer>
+            <div class="footer-col">
+                <p><a href="https://websitesetup.org/css3-cheat-sheet/">Inspiration and text content source</a></p>
+            </div>
+        </footer>
+    </body>
+</html>
